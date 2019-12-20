@@ -1,0 +1,46 @@
+{% extends 'wynettedesenyo/base.html' %}
+{% load static %}
+{% block contents %}
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'index' %}">
+				<span class="icon-pencil-square-o mr-1"></span>
+				Wynette<br><small>Desenyo</small>
+			</a>
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a href="{% url 'index' %}" class="nav-link">Home</a></li>
+					<li class="nav-item active"><a href="{% url 'services' %}" class="nav-link">Services</a></li>
+					
+				</ul>
+	      </div>
+        </div>
+    </nav>
+    <!-- END nav -->  
+    
+  
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-3">
+                <div class="col-md-7 heading-section ftco-animate text-center fadeInUp ftco-animated">
+                    <h2 class="mb-4">Products</h2>
+                    <p class="flip"><span class="deg1"></span><span class="deg2"></span><span class="deg3"></span></p>
+                    <p class="mt-5">We offer this Products</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 text-center ftco-animate fadeInUp ftco-animated">
+                    <div class="menu-wrap">
+						<img src="{% static '' %}" alt="My image" class="menu-img img mb-4">
+                        <div class="text">
+                            <h3>Image Name</h3>
+                            <p>Decription</p>
+                            <p class="price"><span>Price</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+{% endblock %}
